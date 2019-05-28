@@ -1,0 +1,34 @@
+see rfcs 1366 1918, and 4632 for public, private network spaces, and cidr definition
+
+Next Todo
+    * get input values (currently return nodes only) -- Complete
+    * update get input to return input data vs logging data -- Complete
+    * create validate input data function -- In Progress
+        2 functions validiting input is valid - Complete as public method in DataController 
+            1. validate network address - Complete
+            2. validate bits address - completed
+        
+    * Update UI if input is invalid - Complete
+        done, but bug. Need to reset for corrected valid input (remove invalid class)
+        and this must be done for each input field
+    
+    * Setup Git - must do this Next
+
+    * Create network object if input is valid
+
+
+
+Notes from Budget App
+
+App controller has an ctrlAddItem function which calls the UI.getInput function via the event listeners
+Input is validated in the ctrlAddItem function and if valid, is used to call
+BudgetCtrl.addItem function.
+
+The BudgetCtrol.addItem creates  a new Item (either Income or Expense) object and returns a new Item to AppAddItem function in appController
+
+So, for cidr
+
+appController function appGetInput is used in by the eventlisteners to 
+1. call UI.getInput and stores input data into an object
+2. appGetInput validates each input attribute and if valid
+3. calls dataController save setAttributes method and receives new network object.

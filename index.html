@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--- <link type="text/css" rel="stylesheet" href="style.css"> --->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>CIDR APP</title>
+    <style>
+        .header img{
+            opacity: 0.4;
+            background-image: url(subway.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <header class="header blue lighten-1 col s12">
+            <h3>CIDR Calculator</h3>
+            <p> Classless Inter-Domain Routing</p>
+        </header>
+    </div>
+
+            <div class="row">
+                <div class="input-field col s2">
+                    <input type="text" id="network-addr" placeholder="192.168.0.0">
+                </div>
+                <div class="input-field col s1">
+                    <input type="text" id="host-bits" placeholder="1-32">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s1">
+                    <button class="btn waves-effect waves-light right" type="submit" id="button-submit">Submit
+                        <i class="material-icons right">send</i>
+                </div> 
+            </div>
+            </button>
+    </div>
+ <!-- Compiled and minified JavaScript -->
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script--->
+<script src="app.js"></script>
+</body>
+</html>
